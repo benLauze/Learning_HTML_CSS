@@ -102,6 +102,25 @@ Body is what you would like to display to a user.
   <img src="HTMLImagePractice.png" height="200" alt="This is a picture of Your Lie in April" title="Yeah, I Cried">
   </a>
   
+  <audio controls autoplay src="Straw Squeak.mp3">
+  <!--
+  Controls are a boolean attribute, that do not need to equal anything, which give a control panel for the audio.
+  Autoplay is also a boolean attribute which allow music to play upon the opening of the website.
+  Other boolean options include muted and loop.
+  If you do not want to make a secondary audio option available, it does not need a closing tag.
+  -->
+
+  <audio controls>
+  <!--
+  This is an example of having backup audio, if a browser were not to have support of a specific audio type.  
+  -->
+    <source src="Straw Squeak.mp3">
+  <!--
+  you would then input another type of audio file here, like wav.
+  If neither option were to work, than you could output a message, like:
+  -->
+    This browser does not support our audio.
+  </audio>
 </body>
 
 </html>
